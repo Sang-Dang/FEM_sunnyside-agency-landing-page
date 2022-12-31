@@ -24,85 +24,78 @@ body {
 
 /* header */
 header {
-    position: relative;
     background-image: url(../images/mobile/image-header.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height:100%;
-    width: 100%;
     background-size: 100%;
+    padding: 30px 20px;
 }
 
-header>nav {
+header .container {
+
     width: 100%;
+    height: auto;
+}
+
+header nav {
     display: flex;
-    flex-direction: row;
-    padding: 1.5rem;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-header>nav>.nav-menu {
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* nav-items */
+.nav-items {
     display: flex;
     flex-direction: row;
-}
-
-header>nav>.nav-menu>.nav-items {
-    /* display:flex; */
-    gap: 2rem;
+    gap: 1.5rem;
     display: none;
 }
 
-header>nav>.nav-menu>.nav-items>li {
+.nav-items li {
     list-style: none;
-    font-size: .8rem;
     color: white;
     font-family: 'Barlow', sans-serif;
-    font-weight: 100;
 }
 
-header>nav>.nav-menu>.nav-toggle {
+/* nav-toggle */
+.nav-toggle {
     display: flex;
     flex-direction: column;
 }
 
-header>nav>.nav-menu>.nav-toggle>.bar {
-    width: 20px;
+.nav-toggle>.bar {
+    width: 30px;
     height: 3px;
+    background-color: var(--white);
     margin: 2px 0;
-    border-radius: 2rem;
-    color: white;
-    background-color: white;
 }
 
-header>.cover {
-    margin-top: 100px;
+/* header-content */
+.header-content {
+    
 }
 
-header>.cover>h1 {
+.header-content h1 {
+    text-align: center;
+    color: var(--white);
     font-family: 'Fraunces', 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    color: white;
-    text-align: center;
-    font-size: 3rem;
     font-weight: 900;
+    font-size: 3rem;
     letter-spacing: .5rem;
-    line-height: 3.3rem;
+    line-height: 3.5rem;
 }
 
-header>.cover>img {
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 10rem;
+.header-content img {
+    
 }
 
-header>.cover>picture {
-    position: absolute;
-    top: 0;
-    z-index: -10000;
-}
+
 
 /* main */
 
